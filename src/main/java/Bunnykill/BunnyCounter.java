@@ -31,14 +31,14 @@ public class BunnyCounter {
             return 0;
         if (n==1)
             return 1;
-        int sum = 1;
+
         int pp = 0;
         int p = 1;
-        for (int i = 2; i < n; ++n){
-            int tmp = p;
-            sum += p +pp;
+        for (int i = 2; i < n; ++i){
+            int tmp = pp;
+
             pp=p;
-            p = tmp +pp;
+            p = tmp +p;
         } return p+pp;
     }
 }
